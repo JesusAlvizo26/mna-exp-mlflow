@@ -1,0 +1,37 @@
+artifact_path: file:C:/Users/jesus/projects/mna-exp-mlflow/mlruns/1/models/m-93db9c73d46f48f78c13bd680fd1ccf8/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.13.16
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.17.0
+model_id: m-93db9c73d46f48f78c13bd680fd1ccf8
+model_size_bytes: 11547
+model_uuid: m-93db9c73d46f48f78c13bd680fd1ccf8
+prompts: null
+run_id: 1993ca5ae0a04feea235a698edd333e5
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "largo_sepalo", "required": true}, {"type":
+    "double", "name": "ancho_sepalo", "required": true}, {"type": "double", "name":
+    "largo_petalo", "required": true}, {"type": "double", "name": "ancho_petalo",
+    "required": true}]'
+  outputs: '[{"type": "long", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-09 05:40:16.752710'

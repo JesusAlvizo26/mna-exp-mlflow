@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "mna_exp_mlflow"
+version = "0.0.1"
+description = "Experimentaci\u00f3n reproducible con MLflow sobre Iris"
+authors = [
+  { name = "JAM" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = "~=3.13.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["mna_exp_mlflow"]
+include = ["pyproject.toml", "mna_exp_mlflow/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["mna_exp_mlflow"]
+force-sort-within-sections = true
+
